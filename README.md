@@ -35,7 +35,7 @@ The challenge is to achieve the result displayed in the bold line.
 That can be solved by implementing the method `to_representation` in the serializer class. Since we can't name a model field `class`, we have to use another name, like `class_name`. In the method `to_representation` we intercept the data and replace `class_name` with `class`.  
 However this helps only with read-only APIs. This solution prevents the PUT form of populating the input for `class_name`.
 
-If you'd like to help me and get the bounty, please fork the repo and try to debug.
+If you'd like to help me and get the bounty, please clone or fork the repo and try to debug.
 
 Using virtual environments for Python is strongly advised. You can install the dependencies with:
 
