@@ -30,6 +30,8 @@ The goal is to create a JSON using Django REST Framework that will look like:
 }
 </code></pre>
 
+The challenge is to achieve the result displayed in the bold line.
+
 That can be solved by implementing the method `to_representation` in the serializer class. Since we can't name a model field `class`, we have to use another name, like `class_name`. In the method `to_representation` we intercept the data and replace `class_name` with `class`.  
 However this helps only with read-only APIs. This solution prevents the PUT form of populating the input for `class_name`.
 
